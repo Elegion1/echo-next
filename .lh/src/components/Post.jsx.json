@@ -1,0 +1,54 @@
+{
+    "sourceFile": "src/components/Post.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1730205822270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730205827821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-export dafe\n\\ No newline at end of file\n+export default function \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730205834030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-export default function \n\\ No newline at end of file\n+export default function Post()\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730205840653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,4 @@\n-export default function Post()\n\\ No newline at end of file\n+export default function Post() {\n+    return \n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730205883486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n export default function Post() {\n     return \n-    \n+    <>\n+    </>\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730206143745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,8 @@\n export default function Post() {\n     return \n     <>\n+    <div className=\"container\">\n+        \n+    </div>\n     </>\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730206149659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n export default function Post() {\n-    return \n+    return\n     <>\n-    <div className=\"container\">\n-        \n-    </div>\n+        <div className=\"container\">\n+            \n+        </div>\n     </>\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730206221859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n export default function Post() {\n-    return\n+    return()\n     <>\n         <div className=\"container\">\n-            \n+\n         </div>\n     </>\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730206227605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n export default function Post() {\n-    return(\n+    return (\n \n         <>\n-        <div className=\"container\">\n+            <div className=\"container\">\n \n-        </div>\n-    </>\n+            </div>\n+        </>\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730206612824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+export default function Post() {\n+    return (\n+        <>\n+            <div className=\"card card-side bg-base-100 shadow-xl\">\n+                <figure className=\"w-20\">\n+                    <img\n+                        src=\"./media/defaultprofile.jpeg\"\n+                        alt=\"profile\"/>\n+                </figure>\n+                <div className=\"card-body\">\n+                    <h2 className=\"card-title\">New movie is released!</h2>\n+                    <p>Click the button to watch on Jetflix app.</p>\n+                    <div className=\"card-actions justify-end\">\n+                        <button className=\"btn btn-primary\">Watch</button>\n+                    </div>\n+                </div>\n+            </div>\n+        </>\n+    )\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1730205822270,
+            "name": "Commit-0",
+            "content": "export dafe"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/icons/BellIcon.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1730221154248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730221159741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-export default\n\\ No newline at end of file\n+export default function \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730221168631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,5 @@\n-export default function \n\\ No newline at end of file\n+export default function BellIcon() {\n+    return(\n+        \n+    )\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730221176723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n export default function BellIcon() {\n-    return(\n-        \n+    return (\n+        <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth={1.5} stroke=\"currentColor\" className=\"size-6\">\n+            <path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0\" />\n+          </svg>\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730221217550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n-export default function BellIcon() {\n+export default function BellIcon({size}) {\n     return (\n         <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth={1.5} stroke=\"currentColor\" className=\"size-6\">\n             <path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0\" />\n-          </svg>\n+        </svg>\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730221230105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n-export default function BellIcon({size}) {\n+export default function BellIcon({ size = 24 }) {\n     return (\n-        <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth={1.5} stroke=\"currentColor\" className=\"size-6\">\n+        <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth={1.5} stroke=\"currentColor\"  width={size}\n+        height={size}>\n             <path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0\" />\n         </svg>\n     )\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1730221154248,
+            "name": "Commit-0",
+            "content": "export default"
+        }
+    ]
+}

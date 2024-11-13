@@ -1,101 +1,246 @@
-import Image from "next/image";
+"use client";
+
+import React, { useEffect, useState } from "react";
+import Post from "../components/Post";
+import CreatePost from "../components/CreatePost";
+import ProfileImg from "../components/ProfileImg";
+
+// const initialPosts = [
+//   {
+//     id: 1,
+//     name: "Mario Rossi",
+//     username: "mariorossi",
+//     profileImage: null,
+//     verified: true,
+//     postTime: "2024-10-29T08:30:00Z",
+//     content: "Sto imparando React! Qualcuno ha suggerimenti per iniziare?",
+//     postImage: "http://picsum.photos/300",
+//     comments:[
+//       {id: 1, username: "utente1", text: "prova"},
+//       {id: 2, username: "utente31", text: "prova 2"},
+//     ],
+//     retweets: "120",
+//     likes: "500",
+//     views: "20K",
+//   },
+//   {
+//     id: 2,
+//     name: "Lucia Bianchi",
+//     username: "luciabianchi",
+//     profileImage: null,
+//     verified: false,
+//     postTime: "2024-09-29T09:00:00Z",
+//     content: "Amo questa community! Grazie a tutti per il supporto ❤️",
+//     postImage: null,
+//     comments: [
+//       {id: 1, username: "utente1", text: "prova"},
+//       {id: 2, username: "utente31", text: "prova 2"},
+//     ],
+//     retweets: "300",
+//     likes: "1K",
+//     views: "15K",
+//   },
+//   {
+//     id: 3,
+//     name: "Giovanni Verdi",
+//     username: "giovanniverdi",
+//     profileImage: null,
+//     verified: true,
+//     postTime: "2024-08-28T18:45:00Z",
+//     content: "I miei consigli su come programmare in JavaScript...",
+//     postImage: "http://picsum.photos/301",
+//     comments:[
+//       {id: 1, username: "utente1", text: "prova"},
+//       {id: 2, username: "utente31", text: "prova 2"},
+//     ],
+//     retweets: "1K",
+//     likes: "10K",
+//     views: "100K",
+//   },
+//   {
+//     id: 4,
+//     name: "Elena Azzurri",
+//     username: "elenaazzurri",
+//     profileImage: null,
+//     verified: false,
+//     postTime: "2023-10-28T17:15:00Z",
+//     content: "In arrivo il mio primo progetto in React Native!",
+//     postImage: "http://picsum.photos/302",
+//     comments:[
+//       {id: 1, username: "utente1", text: "prova"},
+//       {id: 2, username: "utente31", text: "prova 2"},
+//     ],
+//     retweets: "500",
+//     likes: "2K",
+//     views: "18K",
+//   },
+//   {
+//     id: 5,
+//     name: "Luca Gialli",
+//     username: "lucagialli",
+//     profileImage: null,
+//     verified: false,
+//     postTime: "2023-10-27T14:20:00Z",
+//     content: "C'è qualche novità su JavaScript ES2022?",
+//     postImage: null,
+//     comments:[
+//       {id: 1, username: "utente1", text: "prova"},
+//       {id: 2, username: "utente31", text: "prova 2"},
+//     ],
+//     retweets: "40",
+//     likes: "200",
+//     views: "5K",
+//   },
+//   {
+//     id: 6,
+//     name: "Sara Viola",
+//     username: "saraviola",
+//     profileImage: null,
+//     verified: false,
+//     postTime: "2023-10-27T10:30:00Z",
+//     content: "Ho appena completato un corso avanzato di CSS! 💪",
+//     postImage: "http://picsum.photos/303",
+//     comments: [
+//       {id: 1, username: "utente1", text: "prova"},
+//       {id: 2, username: "utente31", text: "prova 2"},
+//     ],
+//     retweets: "620",
+//     likes: "3K",
+//     views: "22K",
+//   },
+//   {
+//     id: 7,
+//     name: "Marco Blu",
+//     username: "marcoblu",
+//     profileImage: null,
+//     verified: true,
+//     postTime: "2023-10-26T21:15:00Z",
+//     content: "Qualcuno conosce qualche tool per ottimizzare il codice?",
+//     postImage: null,
+//     comments:[
+//       {id: 1, username: "utente1", text: "prova"},
+//       {id: 2, username: "utente31", text: "prova 2"},
+//     ],
+//     retweets: "150",
+//     likes: "600",
+//     views: "8K",
+//   },
+//   {
+//     id: 8,
+//     name: "Anna Rosa",
+//     username: "annarosa",
+//     profileImage: null,
+//     verified: true,
+//     postTime: "2023-10-25T16:45:00Z",
+//     content: "Ecco il mio ultimo progetto: un sito responsive in Bootstrap!",
+//     postImage: "http://picsum.photos/304",
+//     comments: [
+//       {id: 1, username: "utente1", text: "prova"},
+//       {id: 2, username: "utente31", text: "prova 2"},
+//     ],
+//     retweets: "1.2K",
+//     likes: "6K",
+//     views: "35K",
+//   },
+//   {
+//     id: 9,
+//     name: "Paolo Marrone",
+//     username: "paolomarrone",
+//     profileImage: null,
+//     verified: false,
+//     postTime: "2023-10-24T13:10:00Z",
+//     content: "Chi conosce un buon tutorial su Node.js?",
+//     postImage: null,
+//     comments:[
+//       {id: 1, username: "utente1", text: "prova"},
+//       {id: 2, username: "utente31", text: "prova 2"},
+//     ],
+//     retweets: "25",
+//     likes: "100",
+//     views: "3K",
+//   },
+//   {
+//     id: 10,
+//     name: "Giulia Bianca",
+//     username: "giuliabianca",
+//     profileImage: null,
+//     verified: false,
+//     postTime: "2023-10-24T09:20:00Z",
+//     content: "Il mio articolo su Vue.js è online! 📝",
+//     postImage: "http://picsum.photos/305",
+//     comments: [
+//       {id: 1, username: "utente1", text: "prova"},
+//       {id: 2, username: "utente31", text: "prova 2"},
+//     ],
+//     retweets: "2K",
+//     likes: "15K",
+//     views: "50K",
+//   },
+// ];
+
+/**
+ * Funzione per creare un nuovo post e aggiungerlo alla lista
+ * @param {string} content Testo del post
+ */
+const addPost = (content) => {
+  const newPost = {
+    id: posts.length + 1, // ID univoco basato sulla lunghezza dell'array
+    name: "Nuovo Utente",
+    username: "nuovoutente",
+    profileImage: null,
+    verified: false,
+    postTime: new Date().toISOString(),
+    content,
+    postImage: null,
+    comments: [],
+    retweets: "0",
+    likes: "0",
+    views: "0",
+  };
+
+  // Aggiungi il nuovo post in cima e aggiorna lo stato
+  setPosts([newPost, ...posts]);
+};
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  // Imposta lo stato dei post iniziali
+  const [posts, setPosts] = useState(initialPosts);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  return (
+    <>
+      <div className="container relative h-screen overflow-y-auto">
+        <div className="h-20">
+          <button className="btn btn-square btn-ghost absolute top-0 left-0 m-2">
+            <ProfileImg profileImage="https://picsum.photos/100" size={50} />
+          </button>
+          <button className="btn btn-square btn-ghost absolute top-0 left-1/2 transform -translate-x-1/2 mt-2">
+            <img src="./media/echo-logo.png" alt="Echo Logo" />
+          </button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        <div className="container flex justify-around items-center border-b border-gray-400 pb-3">
+          <p>Per te</p>
+          <p>Seguiti</p>
+        </div>
+        <CreatePost onPost={addPost} /> {/* Passa la funzione addPost */}
+        {posts.map((post) => (
+          <Post
+            key={post.id}
+            id={post.id}
+            name={post.name}
+            username={post.username}
+            verified={post.verified}
+            profileImage={post.profileImage}
+            postTime={post.postTime}
+            content={post.content}
+            postImage={post.postImage}
+            comments={post.comments}
+            retweets={post.retweets}
+            likes={post.likes}
+            views={post.views}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        ))}
+        <div className="h-96"></div>
+      </div>
+    </>
   );
 }

@@ -1,0 +1,90 @@
+{
+    "sourceFile": "src/components/ProfileImg.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1730222802333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730222807791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-export default function Pro\n\\ No newline at end of file\n+export default function ProfileImg()\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730222817385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-export default function ProfileImg()\n\\ No newline at end of file\n+export default function ProfileImg(){\n+    return()\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730222831305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n-export default function ProfileImg(){\n-    return()\n+export default function ProfileImg() {\n+    return (\n+        <img src= alt=\"\" />\n+    )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730222838736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n export default function ProfileImg() {\n     return (\n-        <img src= alt=\"\" />\n+        <img src={img} alt=\"\" />\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730222849442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+export default function ProfileImg(profile) {\n+    return (\n+        <img src={profile} alt=\"\" />\n+    )\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730222858014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,5 @@\n-export default function ProfileImg(profile) {\n+export default function ProfileImg({profile = }) {\n     return (\n         <img src={profile} alt=\"\" />\n     )\n-}\n-export default function ProfileImg() {\n-    return (\n-        <img src={img} alt=\"\" />\n-    )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730222875998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-export default function ProfileImg({profile = }) {\n+export default function ProfileImg({profile = ./media/defaultprofile.png}) {\n     return (\n         <img src={profile} alt=\"\" />\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730222882527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-export default function ProfileImg({profile = ./media/defaultprofile.png}) {\n+export default function ProfileImg({profile = \"./media/defaultprofile.png\"}) {\n     return (\n         <img src={profile} alt=\"\" />\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730222889620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-export default function ProfileImg({profile = \"./media/defaultprofile.png\"}) {\n+export default function ProfileImg({ profile = \"./media/defaultprofile.png\" }) {\n     return (\n         <img src={profile} alt=\"\" />\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730223483890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n export default function ProfileImg({ profile = \"./media/defaultprofile.png\" }) {\n     return (\n-        <img src={profile} alt=\"\" />\n+        <img src={profile} alt= />\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730223490279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n export default function ProfileImg({ profile = \"./media/defaultprofile.png\" }) {\n     return (\n-        <img src={profile} alt= />\n+        <img src={profile} alt={p} />\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730223496413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n export default function ProfileImg({ profile = \"./media/defaultprofile.png\" }) {\n     return (\n-        <img src={profile} alt={p} />\n+        <img src={profileImage} alt={p} />\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730223501989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n export default function ProfileImg({ profile = \"./media/defaultprofile.png\" }) {\n     return (\n-        <img src={profileImage} alt={p} />\n+        <img src={profileImage} alt={} />\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730223508382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n export default function ProfileImg({ profile = \"./media/defaultprofile.png\" }) {\n     return (\n-        <img src={profileImage} alt={} />\n+        <img src={profileImage} alt={imageAlt} />\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730223552296,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-export default function ProfileImg({ profile = \"./media/defaultprofile.png\" }) {\n+export default function ProfileImg({ profileImage = \"./media/defaultprofile.png\" } ) {\n     return (\n         <img src={profileImage} alt={imageAlt} />\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730223557536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-export default function ProfileImg({ profileImage = \"./media/defaultprofile.png\" } ) {\n+export default function ProfileImg({ profileImage = \"./media/defaultprofile.png\", imageAlt } ) {\n     return (\n         <img src={profileImage} alt={imageAlt} />\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730223565557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-export default function ProfileImg({ profileImage = \"./media/defaultprofile.png\", imageAlt=\"\" } ) {\n+export default function ProfileImg({ profileImage = \"./media/defaultprofile.png\", imageAlt=\"prof\" } ) {\n     return (\n         <img src={profileImage} alt={imageAlt} />\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730223688766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-export default function ProfileImg({ size  profileImage = \"./media/defaultprofile.png\", imageAlt=\"profile picture\" } ) {\n+export default function ProfileImg({ size =  profileImage = \"./media/defaultprofile.png\", imageAlt=\"profile picture\" } ) {\n     return (\n         <img width={size} height={size} src={profileImage} alt={imageAlt} />\n     )\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1730222802333,
+            "name": "Commit-0",
+            "content": "export default function Pro"
+        }
+    ]
+}

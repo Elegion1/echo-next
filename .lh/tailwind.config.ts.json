@@ -1,0 +1,30 @@
+{
+    "sourceFile": "tailwind.config.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1730137089874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730137101351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,7 @@\n         foreground: \"var(--foreground)\",\n       },\n     },\n   },\n-  plugins: [require('daisyui'),],\n+  plugins: [require(\"daisyui\")],\n };\n export default config;\n"
+                },
+                {
+                    "date": 1730138273587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,6 +14,9 @@\n       },\n     },\n   },\n   plugins: [require(\"daisyui\")],\n+  daisyui: {\n+    themes: [\"light\", \"dark\", \"cupcake\"],\n+  },\n };\n export default config;\n"
+                },
+                {
+                    "date": 1730138278674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n     },\n   },\n   plugins: [require(\"daisyui\")],\n   daisyui: {\n-    themes: [\"light\", \"dark\", \"cupcake\"],\n+    themes: [\"light\", \"dark\"],\n   },\n };\n export default config;\n"
+                }
+            ],
+            "date": 1730137089874,
+            "name": "Commit-0",
+            "content": "import type { Config } from \"tailwindcss\";\n\nconst config: Config = {\n  content: [\n    \"./src/pages/**/*.{js,ts,jsx,tsx,mdx}\",\n    \"./src/components/**/*.{js,ts,jsx,tsx,mdx}\",\n    \"./src/app/**/*.{js,ts,jsx,tsx,mdx}\",\n  ],\n  theme: {\n    extend: {\n      colors: {\n        background: \"var(--background)\",\n        foreground: \"var(--foreground)\",\n      },\n    },\n  },\n  plugins: [require('daisyui'),],\n};\nexport default config;\n"
+        }
+    ]
+}

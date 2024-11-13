@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/globals.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1730224230199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730224248115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,14 @@\n @tailwind utilities;\n \n :root {\n   --background: #ffffff;\n-  --foreground: #171717;\n+  --foreground: #000000;\n }\n \n @media (prefers-color-scheme: dark) {\n   :root {\n-    --background: #090909;\n+    --background: #000000;\n     --foreground: #ededed;\n   }\n }\n \n"
+                },
+                {
+                    "date": 1730224259695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @tailwind base;\n @tailwind components;\n @tailwind utilities;\n \n-:root {\n+/* :root {\n   --background: #ffffff;\n   --foreground: #000000;\n }\n \n@@ -17,5 +17,5 @@\n body {\n   color: var(--foreground);\n   background: var(--background);\n   font-family: Arial, Helvetica, sans-serif;\n-}\n+} */\n"
+                }
+            ],
+            "date": 1730224230199,
+            "name": "Commit-0",
+            "content": "@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n:root {\n  --background: #ffffff;\n  --foreground: #171717;\n}\n\n@media (prefers-color-scheme: dark) {\n  :root {\n    --background: #090909;\n    --foreground: #ededed;\n  }\n}\n\nbody {\n  color: var(--foreground);\n  background: var(--background);\n  font-family: Arial, Helvetica, sans-serif;\n}\n"
+        }
+    ]
+}

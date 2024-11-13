@@ -1,0 +1,78 @@
+{
+    "sourceFile": "src/components/Badge.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1730201818290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730201823845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-export public function \n\\ No newline at end of file\n+export public function Badge\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730201829177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-export public function Badge\n\\ No newline at end of file\n+export public function Badge() {\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730201836726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n-export public function Badge() {\n-    \n+export default function Badge() {\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730201843255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n export default function Badge() {\n-\n+return  <div className=\"badge badge-primary badge-xs\"></div>\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730201857977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n export default function Badge() {\n-return  <div className=\"badge badge-primary badge-xs\"></div>\n+    return <div className=\"badge badge-primary badge-xs\"></div>\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730202038972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n export default function Badge() {\n-    return <div className=\"badge badge-primary badge-xs\"></div>\n+    return <div className=\"badge badge-primary badge-xs \"></div>\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730202049966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n export default function Badge() {\n-    return <div className=\"badge badge-primary badge-xs \"></div>\n+    return <div className=\"badge badge-primary badge-xs absolute\"></div>\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730202061669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n export default function Badge() {\n-    return <div className=\"badge badge-primary badge-xs absolute\"></div>\n+    return <div className=\"badge badge-primary badge-xs absolute left-\"></div>\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730202069898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n export default function Badge() {\n-    return <div className=\"badge badge-primary badge-xs absolute left-\"></div>\n+    return <div className=\"badge badge-primary badge-xs absolute right-0\"></div>\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730202074965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n export default function Badge() {\n-    return <div className=\"badge badge-primary badge-xs absolute right-0\"></div>\n+    return <div className=\"badge badge-primary badge-xs absolute right-0 top-0\"></div>\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730202101633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n export default function Badge() {\n-    return <div className=\"badge badge-primary badge-xs absolute right-0 top-0\"></div>\n+    return <div className=\"badge badge-primary badge-xs absolute right-0 top-5\"></div>\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730202108847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n export default function Badge() {\n-    return <div className=\"badge badge-primary badge-xs absolute right-0 top-5\"></div>\n+    return <div className=\"badge badge-primary badge-xs absolute right-1 top-1\"></div>\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730202118866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n export default function Badge() {\n-    return <div className=\"badge badge-primary badge-xs absolute right-1 top-1\"></div>\n+    return <div className=\"badge badge-primary badge-xs absolute right-1 top-0\"></div>\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730202131868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n export default function Badge() {\n-    return <div className=\"badge badge-primary badge-xs absolute right-1 top-0\"></div>\n+    return <div className=\"badge badge-primary badge-xs absolute right-1 top-1 \"></div>\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730202138005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n export default function Badge() {\n-    return <div className=\"badge badge-primary badge-xs absolute right-1 top-1 \"></div>\n+    return <div className=\"badge badge-primary badge-xs absolute right-1 top-1 w-1\"></div>\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1730201818290,
+            "name": "Commit-0",
+            "content": "export public function "
+        }
+    ]
+}

@@ -1,0 +1,290 @@
+{
+    "sourceFile": "src/components/CreatePost.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 68,
+            "patches": [
+                {
+                    "date": 1730307914885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730307921250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n export default function CreatePost() {\n-    return()\n+    return (\n+        \n+    )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730308018607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n export default function CreatePost() {\n     return (\n+        <>\n         \n+        </>\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730308030458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+export default function CreatePost() {\n+    return \n+        </>\n+    )\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730308038053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,7 @@\n export default function CreatePost() {\n-    return \n-        </>\n-    )\n-}\n-export default function CreatePost() {\n     return (\n-        <>\n-        \n-        </>\n+        <div className=\"container\">\n+            \n+        </div>\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730308043911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+export default function CreatePost() {\n+    return (\n+        <div className=\"container\">\n+            <p></p>\n+        </div>\n+    )\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730308050612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,7 @@\n export default function CreatePost() {\n     return (\n         <div className=\"container\">\n-            <p></p>\n+            <p>A cosa stai pensando?</p>\n         </div>\n     )\n-}\n-export default function CreatePost() {\n-    return (\n-        <div className=\"container\">\n-            \n-        </div>\n-    )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730368594639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n export default function CreatePost() {\n     return (\n         <div className=\"container\">\n-            <p>A cosa stai pensando?</p>\n+            <p>Che c'è di nuovo?</p>\n         </div>\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730389616601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n export default function CreatePost() {\n     return (\n-        <div className=\"container\">\n+        <div className=\"container bo\">\n             <p>Che c'è di nuovo?</p>\n         </div>\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730389621618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n export default function CreatePost() {\n     return (\n-        <div className=\"container bo\">\n+        <div className=\"container border-b\">\n             <p>Che c'è di nuovo?</p>\n         </div>\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730389638391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n export default function CreatePost() {\n     return (\n-        <div className=\"container border-b\">\n+        <div className=\"container\">\n             <p>Che c'è di nuovo?</p>\n         </div>\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730389646541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n export default function CreatePost() {\n     return (\n         <div className=\"container\">\n+            div.\n             <p>Che c'è di nuovo?</p>\n         </div>\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730389652873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n export default function CreatePost() {\n     return (\n         <div className=\"container\">\n-            div.\n+            <div className=\"border-b\">\n+                \n+            </div>\n             <p>Che c'è di nuovo?</p>\n         </div>\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730389666186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+export default function CreatePost() {\n+    return (\n+        <div className=\"container\">\n+            <div className=\"border-b\">\n+                <p>Che c'è di nuovo?</p>\n+\n+            </div>\n+            \n+        </div>\n+    )\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730389728546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,18 +4,8 @@\n             <div className=\"border-b\">\n                 <p>Che c'è di nuovo?</p>\n \n             </div>\n-            \n+            <ImageIcon/ImageIcon>\n         </div>\n     )\n-}\n-export default function CreatePost() {\n-    return (\n-        <div className=\"container\">\n-            <div className=\"border-b\">\n-                \n-            </div>\n-            <p>Che c'è di nuovo?</p>\n-        </div>\n-    )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730389771280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n+\n export default function CreatePost() {\n     return (\n         <div className=\"container\">\n             <div className=\"border-b\">\n                 <p>Che c'è di nuovo?</p>\n \n             </div>\n-            <ImageIcon/ImageIcon>\n+            <ImageIcon />\n         </div>\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730389777218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-\n+import ImageIcon from \n export default function CreatePost() {\n     return (\n         <div className=\"container\">\n             <div className=\"border-b\">\n"
+                },
+                {
+                    "date": 1730389783566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import ImageIcon from \"../components/ima\"\n+export default function CreatePost() {\n+    return (\n+        <div className=\"container\">\n+            <div className=\"border-b\">\n+                <p>Che c'è di nuovo?</p>\n+\n+            </div>\n+            <ImageIcon />\n+        </div>\n+    )\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730389790019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import ImageIcon from \"../components/ima\"\n+import ImageIcon from \"../icons\"\n export default function CreatePost() {\n     return (\n         <div className=\"container\">\n             <div className=\"border-b\">\n@@ -8,17 +8,5 @@\n             </div>\n             <ImageIcon />\n         </div>\n     )\n-}\n-import ImageIcon from \n-export default function CreatePost() {\n-    return (\n-        <div className=\"container\">\n-            <div className=\"border-b\">\n-                <p>Che c'è di nuovo?</p>\n-\n-            </div>\n-            <ImageIcon />\n-        </div>\n-    )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730389803260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n-import ImageIcon from \"../icons\"\n+import ImageIcon from \"../icons/ImageIcon\"\n export default function CreatePost() {\n     return (\n-        <div className=\"container\">\n+        <div className=\"container p\">\n             <div className=\"border-b\">\n                 <p>Che c'è di nuovo?</p>\n \n             </div>\n"
+                },
+                {
+                    "date": 1730389816719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import ImageIcon from \"../icons/ImageIcon\"\n export default function CreatePost() {\n     return (\n-        <div className=\"container p\">\n+        <div className=\"container px-5\">\n             <div className=\"border-b\">\n                 <p>Che c'è di nuovo?</p>\n \n             </div>\n"
+                },
+                {
+                    "date": 1730389827249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import ImageIcon from \"../icons/ImageIcon\"\n export default function CreatePost() {\n     return (\n-        <div className=\"container px-5\">\n+        <div className=\"container\">\n             <div className=\"border-b\">\n                 <p>Che c'è di nuovo?</p>\n \n             </div>\n"
+                },
+                {
+                    "date": 1730390034773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import ImageIcon from \"../icons/ImageIcon\"\n export default function CreatePost() {\n     return (\n         <div className=\"container\">\n-            <div className=\"border-b\">\n+            \n                 <p>Che c'è di nuovo?</p>\n \n             </div>\n             <ImageIcon />\n"
+                },
+                {
+                    "date": 1730390040882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n         <div className=\"container\">\n             \n                 <p>Che c'è di nuovo?</p>\n \n-            </div>\n+        </div>\n             <ImageIcon />\n-        </div>\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730390048255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,10 @@\n             \n                 <p>Che c'è di nuovo?</p>\n \n         </div>\n+        <div className=\"container\">\n+            \n+        </div>\n             <ImageIcon />\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730390056457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,16 @@\n import ImageIcon from \"../icons/ImageIcon\"\n export default function CreatePost() {\n     return (\n+        <>\n+        </>\n         <div className=\"container\">\n             \n                 <p>Che c'è di nuovo?</p>\n \n         </div>\n         <div className=\"container\">\n-            \n+            <ImageIcon />\n+\n         </div>\n-            <ImageIcon />\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730390063504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,15 @@\n import ImageIcon from \"../icons/ImageIcon\"\n export default function CreatePost() {\n     return (\n         <>\n-        </>\n-        <div className=\"container\">\n-            \n+            <div className=\"container\">\n                 <p>Che c'è di nuovo?</p>\n \n-        </div>\n-        <div className=\"container\">\n-            <ImageIcon />\n+            </div>\n+            <div className=\"container\">\n+                <ImageIcon />\n \n-        </div>\n+            </div>\n+        </>\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730390074299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,13 +3,11 @@\n     return (\n         <>\n             <div className=\"container\">\n                 <p>Che c'è di nuovo?</p>\n-\n             </div>\n-            <div className=\"container\">\n+            <div className=\"container \">\n                 <ImageIcon />\n-\n             </div>\n         </>\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730390169988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n         <>\n             <div className=\"container\">\n                 <p>Che c'è di nuovo?</p>\n             </div>\n-            <div className=\"container \">\n+            <div className=\"container border-t p-3\">\n                 <ImageIcon />\n             </div>\n         </>\n     )\n"
+                },
+                {
+                    "date": 1730390180000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import ImageIcon from \"../icons/ImageIcon\"\n export default function CreatePost() {\n     return (\n         <>\n-            <div className=\"container\">\n+            <div className=\"container bg\">\n                 <p>Che c'è di nuovo?</p>\n             </div>\n             <div className=\"container border-t p-3\">\n                 <ImageIcon />\n"
+                },
+                {
+                    "date": 1730390185798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import ImageIcon from \"../icons/ImageIcon\"\n export default function CreatePost() {\n     return (\n         <>\n-            <div className=\"container bg\">\n+            <div className=\"container bg-gray-400\">\n                 <p>Che c'è di nuovo?</p>\n             </div>\n             <div className=\"container border-t p-3\">\n                 <ImageIcon />\n"
+                },
+                {
+                    "date": 1730390222568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import ImageIcon from \"../icons/ImageIcon\"\n export default function CreatePost() {\n     return (\n         <>\n-            <div className=\"container bg-gray-400\">\n+            <div className=\"container\">\n                 <p>Che c'è di nuovo?</p>\n             </div>\n             <div className=\"container border-t p-3\">\n                 <ImageIcon />\n"
+                },
+                {
+                    "date": 1730390244247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n import ImageIcon from \"../icons/ImageIcon\"\n export default function CreatePost() {\n     return (\n         <>\n-            <div className=\"container\">\n+            <div className=\"container p-3\">\n                 <p>Che c'è di nuovo?</p>\n             </div>\n-            <div className=\"container border-t p-3\">\n+            <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n         </>\n     )\n"
+                },
+                {
+                    "date": 1730390261567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n export default function CreatePost() {\n     return (\n         <>\n             <div className=\"container p-3\">\n-                <p>Che c'è di nuovo?</p>\n+                text\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n"
+                },
+                {
+                    "date": 1730390285578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n export default function CreatePost() {\n     return (\n         <>\n             <div className=\"container p-3\">\n-                text\n+                <textarea name=\"\" id=\"\">Che c'è di nuovo?</textarea>\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n"
+                },
+                {
+                    "date": 1730390379795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n export default function CreatePost() {\n     return (\n         <>\n             <div className=\"container p-3\">\n-                <textarea name=\"\" id=\"\">Che c'è di nuovo?</textarea>\n+                <textarea name=\"\" id=\"\"></textarea>\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n"
+                },
+                {
+                    "date": 1730390390929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n export default function CreatePost() {\n     return (\n         <>\n             <div className=\"container p-3\">\n-                <textarea name=\"\" id=\"\"></textarea>\n+                <textarea name=\"\" id=\"\" placeholder=\"Che c'è di nuo\"></textarea>\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n"
+                },
+                {
+                    "date": 1730390453243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,16 @@\n import ImageIcon from \"../icons/ImageIcon\"\n+\n export default function CreatePost() {\n     return (\n         <>\n             <div className=\"container p-3\">\n-                <textarea name=\"\" id=\"\" placeholder=\"Che c'è di nuo\"></textarea>\n+                <textarea \n+                    name=\"\" \n+                    id=\"\" \n+                    placeholder=\"Che c'è di nuovo?\"\n+                    className=\"w-full h-32 resize-none border border-gray-300 rounded-md p-2\" // Aggiunge larghezza completa e altre proprietà di stile\n+                ></textarea>\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n"
+                },
+                {
+                    "date": 1730390462614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+import ImageIcon from \"../icons/ImageIcon\"\n+\n+export default function CreatePost() {\n+    return (\n+        <>\n+            <div className=\"container p-3\">\n+                <textarea \n+                    name=\"\" \n+                    id=\"\" \n+                    placeholder=\"Che c'è di nuovo?\"\n+                    className=\"w-full resize-none border border-gray-300 rounded-md p-2\" // Aggiunge larghezza completa e altre proprietà di stile\n+                ></textarea>\n+            </div>\n+            <div className=\"container border-t border-gray-400 p-3\">\n+                <ImageIcon />\n+            </div>\n+        </>\n+    )\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730390479831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,32 +7,13 @@\n                 <textarea \n                     name=\"\" \n                     id=\"\" \n                     placeholder=\"Che c'è di nuovo?\"\n-                    className=\"w-full resize-none border border-gray-300 rounded-md p-2\" // Aggiunge larghezza completa e altre proprietà di stile\n+                    className=\"w-full resize-none p-2\" // Aggiunge larghezza completa e altre proprietà di stile\n                 ></textarea>\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n         </>\n     )\n-}\n-import ImageIcon from \"../icons/ImageIcon\"\n-\n-export default function CreatePost() {\n-    return (\n-        <>\n-            <div className=\"container p-3\">\n-                <textarea \n-                    name=\"\" \n-                    id=\"\" \n-                    placeholder=\"Che c'è di nuovo?\"\n-                    className=\"w-full h-32 resize-none border border-gray-300 rounded-md p-2\" // Aggiunge larghezza completa e altre proprietà di stile\n-                ></textarea>\n-            </div>\n-            <div className=\"container border-t border-gray-400 p-3\">\n-                <ImageIcon />\n-            </div>\n-        </>\n-    )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730390512598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,9 @@\n                 <textarea \n                     name=\"\" \n                     id=\"\" \n                     placeholder=\"Che c'è di nuovo?\"\n-                    className=\"w-full resize-none p-2\" // Aggiunge larghezza completa e altre proprietà di stile\n-                ></textarea>\n+                    className=\"w-full resize-none p-2\"></textarea>\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n"
+                },
+                {
+                    "date": 1730390537851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,13 +3,16 @@\n export default function CreatePost() {\n     return (\n         <>\n             <div className=\"container p-3\">\n-                <textarea \n-                    name=\"\" \n-                    id=\"\" \n+                <textarea\n+                    name=\"\"\n+                    id=\"\"\n                     placeholder=\"Che c'è di nuovo?\"\n-                    className=\"w-full resize-none p-2\"></textarea>\n+                    className=\"w-full resize-none p-2\">\n+\n+                </textarea>\n+                \n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n"
+                },
+                {
+                    "date": 1730390559397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n                     placeholder=\"Che c'è di nuovo?\"\n                     className=\"w-full resize-none p-2\">\n \n                 </textarea>\n-                \n+                <button className=\"btn\">Button</button>\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n"
+                },
+                {
+                    "date": 1730390572215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n                     placeholder=\"Che c'è di nuovo?\"\n                     className=\"w-full resize-none p-2\">\n \n                 </textarea>\n-                <button className=\"btn\">Button</button>\n+                <button className=\"btn btn\">Posta</button>\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n"
+                },
+                {
+                    "date": 1730390585073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n                     placeholder=\"Che c'è di nuovo?\"\n                     className=\"w-full resize-none p-2\">\n \n                 </textarea>\n-                <button className=\"btn btn\">Posta</button>\n+                <button className=\"btn \">Posta</button>\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n"
+                },
+                {
+                    "date": 1730390611600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n                     placeholder=\"Che c'è di nuovo?\"\n                     className=\"w-full resize-none p-2\">\n \n                 </textarea>\n-                <button className=\"btn \">Posta</button>\n+                <button className=\"btn btn-info\">Posta</button>\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n"
+                },
+                {
+                    "date": 1730390620818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n                     placeholder=\"Che c'è di nuovo?\"\n                     className=\"w-full resize-none p-2\">\n \n                 </textarea>\n-                <button className=\"btn btn-info\">Posta</button>\n+                <button className=\"btn btn-info text\">Posta</button>\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n"
+                },
+                {
+                    "date": 1730390630916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n                     placeholder=\"Che c'è di nuovo?\"\n                     className=\"w-full resize-none p-2\">\n \n                 </textarea>\n-                <button className=\"btn btn-info text\">Posta</button>\n+                <button className=\"btn-s btn-info text-white\">Posta</button>\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n"
+                },
+                {
+                    "date": 1730390641432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n                     placeholder=\"Che c'è di nuovo?\"\n                     className=\"w-full resize-none p-2\">\n \n                 </textarea>\n-                <button className=\"btn-s btn-info text-white\">Posta</button>\n+                <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n"
+                },
+                {
+                    "date": 1730390650419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n                     placeholder=\"Che c'è di nuovo?\"\n                     className=\"w-full resize-none p-2\">\n \n                 </textarea>\n-                <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n+                <button className=\"btn btn-sm btn-info text-white \">Posta</button>\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n"
+                },
+                {
+                    "date": 1730390672515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n                     placeholder=\"Che c'è di nuovo?\"\n                     className=\"w-full resize-none p-2\">\n \n                 </textarea>\n-                <button className=\"btn btn-sm btn-info text-white \">Posta</button>\n+                <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n"
+                },
+                {
+                    "date": 1730390711334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import ImageIcon from \"../icons/ImageIcon\"\n+import ImageIcon from \"../icons/ImageIcon\";\n \n export default function CreatePost() {\n     return (\n         <>\n@@ -7,15 +7,16 @@\n                 <textarea\n                     name=\"\"\n                     id=\"\"\n                     placeholder=\"Che c'è di nuovo?\"\n-                    className=\"w-full resize-none p-2\">\n-\n-                </textarea>\n-                <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n+                    className=\"w-full resize-none p-2 mb-3\" // Aggiunto margine inferiore\n+                ></textarea>\n+                <div className=\"flex justify-end\">\n+                    <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n+                </div>\n             </div>\n             <div className=\"container border-t border-gray-400 p-3\">\n                 <ImageIcon />\n             </div>\n         </>\n-    )\n+    );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730390725542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n                 <div className=\"flex justify-end\">\n                     <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n                 </div>\n             </div>\n-            <div className=\"container border-t border-gray-400 p-3\">\n+            <div className=\"container border-t border-gray-300 p-3\">\n                 <ImageIcon />\n             </div>\n         </>\n     );\n"
+                },
+                {
+                    "date": 1730390824676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n                 </div>\n             </div>\n             <div className=\"container border-t border-gray-300 p-3\">\n                 <ImageIcon />\n+                \n             </div>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730390831783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n                 </div>\n             </div>\n             <div className=\"container border-t border-gray-300 p-3\">\n                 <ImageIcon />\n-                \n+                <GifIcon />\n             </div>\n         </>\n     );\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730390839880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import ImageIcon from \"../icons/ImageIcon\";\n+import GifIcon from \n \n export default function CreatePost() {\n     return (\n         <>\n"
+                },
+                {
+                    "date": 1730390845713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import ImageIcon from \"../icons/ImageIcon\";\n-import GifIcon from \n+import GifIcon from \"../icons/GifIcon\"\n \n export default function CreatePost() {\n     return (\n         <>\n"
+                },
+                {
+                    "date": 1730390861551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n                 <div className=\"flex justify-end\">\n                     <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n                 </div>\n             </div>\n-            <div className=\"container border-t border-gray-300 p-3\">\n+            <div className=\"container flex border-t border-gray-300 p-3\">\n                 <ImageIcon />\n                 <GifIcon />\n             </div>\n         </>\n"
+                },
+                {
+                    "date": 1730390868462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n                 <div className=\"flex justify-end\">\n                     <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n                 </div>\n             </div>\n-            <div className=\"container flex border-t border-gray-300 p-3\">\n+            <div className=\"container flex content border-t border-gray-300 p-3\">\n                 <ImageIcon />\n                 <GifIcon />\n             </div>\n         </>\n"
+                },
+                {
+                    "date": 1730390877803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n                 <div className=\"flex justify-end\">\n                     <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n                 </div>\n             </div>\n-            <div className=\"container flex content border-t border-gray-300 p-3\">\n+            <div className=\"container flex content-start items-center border-t border-gray-300 p-3\">\n                 <ImageIcon />\n                 <GifIcon />\n             </div>\n         </>\n"
+                },
+                {
+                    "date": 1730390890437,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n                 <div className=\"flex justify-end\">\n                     <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n                 </div>\n             </div>\n-            <div className=\"container flex content-start items-center border-t border-gray-300 p-3\">\n+            <div className=\"container flex content- items-center border-t border-gray-300 p-3\">\n                 <ImageIcon />\n                 <GifIcon />\n             </div>\n         </>\n"
+                },
+                {
+                    "date": 1730390903628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n                 <div className=\"flex justify-end\">\n                     <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n                 </div>\n             </div>\n-            <div className=\"container flex content- items-center border-t border-gray-300 p-3\">\n+            <div className=\" flex content-around items-center border-t border-gray-300 p-3\">\n                 <ImageIcon />\n                 <GifIcon />\n             </div>\n         </>\n"
+                },
+                {
+                    "date": 1730390917560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n                 <div className=\"flex justify-end\">\n                     <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n                 </div>\n             </div>\n-            <div className=\" flex content-around items-center border-t border-gray-300 p-3\">\n+            <div className=\"flex content-between items-center border-t border-gray-300 p-3\">\n                 <ImageIcon />\n                 <GifIcon />\n             </div>\n         </>\n"
+                },
+                {
+                    "date": 1730390924897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n                 <div className=\"flex justify-end\">\n                     <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n                 </div>\n             </div>\n-            <div className=\"flex content-between items-center border-t border-gray-300 p-3\">\n+            <div className=\"flex content-evenly items-center border-t border-gray-300 p-3\">\n                 <ImageIcon />\n                 <GifIcon />\n             </div>\n         </>\n"
+                },
+                {
+                    "date": 1730390931954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n                 <div className=\"flex justify-end\">\n                     <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n                 </div>\n             </div>\n-            <div className=\"flex content-evenly items-center border-t border-gray-300 p-3\">\n+            <div className=\"flex content-center items-center border-t border-gray-300 p-3\">\n                 <ImageIcon />\n                 <GifIcon />\n             </div>\n         </>\n"
+                },
+                {
+                    "date": 1730390943942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n                 <div className=\"flex justify-end\">\n                     <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n                 </div>\n             </div>\n-            <div className=\"flex content-center items-center border-t border-gray-300 p-3\">\n+            <div className=\"flex content-center items-center border-t border-gray-300 bg- p-3\">\n                 <ImageIcon />\n                 <GifIcon />\n             </div>\n         </>\n"
+                },
+                {
+                    "date": 1730390988372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n                 <div className=\"flex justify-end\">\n                     <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n                 </div>\n             </div>\n-            <div className=\"flex content-center items-center border-t border-gray-300 bg- p-3\">\n+            <div className=\"flex content-center items-center border-t border-gray-300 p-3\">\n                 <ImageIcon />\n                 <GifIcon />\n             </div>\n         </>\n"
+                },
+                {
+                    "date": 1730391002415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n                 <div className=\"flex justify-end\">\n                     <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n                 </div>\n             </div>\n-            <div className=\"flex content-center items-center border-t border-gray-300 p-3\">\n+            <div className=\"flex content-center items-center border-t border-gray-300 p-3 text-\">\n                 <ImageIcon />\n                 <GifIcon />\n             </div>\n         </>\n"
+                },
+                {
+                    "date": 1730391009304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n                 <div className=\"flex justify-end\">\n                     <button className=\"btn btn-sm btn-info text-white\">Posta</button>\n                 </div>\n             </div>\n-            <div className=\"flex content-center items-center border-t border-gray-300 p-3 text-\">\n+            <div className=\"flex content-center items-center border-t border-gray-300 p-3 text-blue-400\">\n                 <ImageIcon />\n                 <GifIcon />\n             </div>\n         </>\n"
+                }
+            ],
+            "date": 1730307914885,
+            "name": "Commit-0",
+            "content": "export default function CreatePost() {\n    return()\n}"
+        }
+    ]
+}

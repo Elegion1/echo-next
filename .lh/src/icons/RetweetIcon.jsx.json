@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/icons/RetweetIcon.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1730219529044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730219536823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-export default function \n\\ No newline at end of file\n+export default function RetweetIcon() {}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730219542373,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,5 @@\n-export default function RetweetIcon() {}\n\\ No newline at end of file\n+export default function RetweetIcon() {\n+    return( \n+        \n+    )\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730220176720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n export default function RetweetIcon() {\n-    return( \n-        \n+    return (\n+        <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth={1.5} stroke=\"currentColor\" width={size} height={size}>\n+            <path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3\" />\n+        </svg>\n     )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1730220472065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-export default function RetweetIcon() {\n+export default function RetweetIcon( { size = 24 }) {\n     return (\n         <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" strokeWidth={1.5} stroke=\"currentColor\" width={size} height={size}>\n             <path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3\" />\n         </svg>\n"
+                }
+            ],
+            "date": 1730219529044,
+            "name": "Commit-0",
+            "content": "export default function "
+        }
+    ]
+}
